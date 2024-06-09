@@ -21,12 +21,12 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={cn(inter.className)}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-        <div className="relative flex min-h-screen flex-col">
-        <SiteHeader />
-        <div className="flex-1">{children}</div>
-        </div>
+          <div className="relative flex min-h-screen flex-col">
+            <SiteHeader />
+            <div className="flex-1">{children}</div>
+          </div>
         </ThemeProvider>
-        </body>
+      </body>
     </html>
   );
 }
